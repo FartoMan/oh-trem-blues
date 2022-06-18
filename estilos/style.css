@@ -49,20 +49,41 @@ header ul a {
 }
 
 div.fundo {
+
+    overflow: -moz-hidden-unscrollable;
     width: 100vw;
     height: 100vh;
 
     background-color: white;
-    background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
+    /*background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 65vh, contain;
-    background-position: 50% 75%, top;
+    background-position: 50% 75%, top;*/
 
     position: absolute;
     top: 0;
     left: 0;
 
     z-index: -1;
+}
+
+.fundo img.banda {
+    display: block;
+    margin: auto;
+    width: 100%;
+
+    z-index: -1000;
+}
+
+.fundo img.logo {
+    margin: 0 auto;
+    height: 50%;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+
+    position: absolute;
 }
 
 footer {
