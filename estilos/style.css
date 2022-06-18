@@ -52,7 +52,7 @@ div.fundo {
     width: 100vw;
     height: 100vh;
 
-    background-color: black;
+    background-color: white;
     background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 65vh, contain;
