@@ -10,10 +10,10 @@ body {
     height: 100vh;
 
     background-color: gray;
-    background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
+    /*background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 65vh, cover;
-    background-position: 50% 75%, top;
+    background-position: 50% 75%, top;*/
 }
 
 header {
@@ -46,6 +46,23 @@ header ul a {
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+
+div.fundo {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+    background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 65vh, contain;
+    background-position: 50% 75%, top;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
 }
 
 footer {
