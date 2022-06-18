@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    height: 100vh;
+
+    background-color: gray;
+    background-image: url('../imagens/logo-sn.png'), url('../imagens/grupo-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 65vh, cover;
+    background-position: 50% 75%, top;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-otb {
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+header ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+header ul li {
+    margin-left: -3px;
+    display: inline;
+    box-sizing: border-box;
+    font-variant: small-caps;
+}
+
+header ul a {
+    background-color: rgba(0, 0, 0, 0.158);
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline;
+    margin: 0px 5px;
+}
