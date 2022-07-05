@@ -48,6 +48,22 @@ header ul a {
     text-shadow: 1px 1px 1px black;
 }
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    width: max-content;
+    margin-top: 15px;   
+    display: none;
+    position: absolute;
+}
+
 body h1 {
     margin: 17px 0px;
     text-align: center;
