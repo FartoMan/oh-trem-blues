@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -36,7 +37,9 @@ nav {
 }
 
 body {
+    width: 100vw;
     background-color: black;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -59,8 +62,81 @@ body::-webkit-scrollbar-thumb:hover {
     width: 95vw;
     height: 768px;
     margin: auto;
+    margin-bottom: 15px;
     border-radius: 25px;
     background-image: url(../imagens/grupo-bg.jpg);
     background-size: cover;
     background-position-x: center;
+}
+
+#videos {
+    width: 100%;
+    text-align: center;
+}
+
+#videos div {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    background-color: rgba(128, 128, 128, 0.233);
+    margin: 0 5px;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 20%;
+    transition: .5s;
+}
+#videos div:hover {
+    background-color:  rgba(128, 128, 128, 0.63);
+}
+
+#videos div > iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#slideShow {
+    background-color: rgba(128, 128, 128, 0.133);
+
+    margin: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#slideShow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#slideShow .foto {
+    display: inline-block;
+}
+
+
+footer {
+    position: relative;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.075);
+    height: 60px;
+    transition: 1s;
+}
+footer:hover {
+    background-color: rgba(128, 128, 128, 0.175);
+}
+
+footer ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+}
+
+footer li {
+    display: inline;
+    margin: 0px 5px;
 }
