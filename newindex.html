@@ -33,23 +33,61 @@
             <iframe width="300" height="168" src="https://www.youtube.com/embed/rTlXG-ETvJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-
-    <div id="slideShow">
-        <p style="color: white;"><a href="#">Galeria</a></p>
-        <div class="foto">
-            <img src="imagens/show-ccp/peq/IMG_4359.jpg" alt="">
+    
+    <!-- Seleção de imagens -->
+    <div id="row">
+        <p><a href="#">Galeria</a></p>
+        <div class="column">
+            <img src="imagens/show-ccp/peq/IMG_4359.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Tiny img">
         </div>
-        <div class="foto">
-            <img src="imagens/show-ccp/peq/IMG_4502.jpg" alt="">
+        <div class="column">
+            <img src="imagens/show-ccp/peq/IMG_4502.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Tiny img">
         </div>
-        <div class="foto">
-            <img src="imagens/show-ccp/peq/IMG_4601.jpg" alt="">
-        </div>
-        <div class="foto">
-            <img src="imagens/show-ccp/peq/IMG_4362.jpg" alt="">
+        <div class="column">
+            <img src="imagens/show-ccp/peq/IMG_4601.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Tiny img">
         </div>
     </div>
 
+    <div id="myModal" class="modal">
+        <!-- Fechar o visualizador -->
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+            
+            <!-- Full Images -->
+            <div class="mySlides">
+                <div class="numberText">1 / 3</div>
+                <img src="imagens/show-ccp/IMG_4359.jpg" alt="Full Image" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numberText">2 / 3</div>
+                <img src="imagens/show-ccp/IMG_4502.jpg" alt="Full Image" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numberText">3 / 3</div>
+                <img src="imagens/show-ccp/IMG_4601.jpg" alt="Full Image" style="width: 100%;">
+            </div>
+            
+            <!-- Buttons next/prev -->
+            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+            <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+            <!-- Thumbnails -->
+            <div class="column">
+                <img class="demo" src="imagens/show-ccp/peq/IMG_4359.jpg" onclick="currentSlide(1)" alt="Tiny image">
+            </div>
+            <div class="column">
+                <img class="demo" src="imagens/show-ccp/peq/IMG_4502.jpg" onclick="currentSlide(2)" alt="Tiny image">
+            </div>
+            <div class="column">
+                <img class="demo" src="imagens/show-ccp/peq/IMG_4601.jpg" onclick="currentSlide(3)" alt="Tiny image">
+            </div>
+            
+        </div>
+    </div>
+        
     <footer>
         <ul>
             <li><abbr title="Instagram"><a href="https://www.instagram.com/ohtremblues/" target="_blank"><img src="imagens/instagram-icon.png" alt="Instagram oh-trem-blues"></a></abbr></li>
@@ -57,5 +95,7 @@
             <li><abbr title="YouTube"><a href="https://www.youtube.com/channel/UCQLcWZr4zBIpNa15kDwOf6Q" target="_blank"><img src="imagens/youtube-icon.png" alt="YouTube oh-trem-blues"></a></abbr></li>
         </ul>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
